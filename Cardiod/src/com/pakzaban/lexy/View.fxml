@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: rgb(43,43,43);" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pakzaban.lexy.Controller">
+   <children>
+      <VBox alignment="CENTER" layoutX="656.0" layoutY="178.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <Label fx:id="numLabel" alignment="CENTER" prefWidth="30.0" textFill="WHITE" />
+            <Slider fx:id="slider1" max="500.0" min="1.0" onDragDetected="#setSlider" orientation="VERTICAL" prefHeight="368.0" prefWidth="16.0" />
+         </children>
+      </VBox>
+      <Pane fx:id="graphPane" layoutX="250.0" layoutY="238.0" maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: rgb(43,43,43);" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <VBox alignment="CENTER" layoutX="670.0" layoutY="178.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="178.0">
+         <children>
+            <Label fx:id="numLabel2" alignment="CENTER" prefWidth="30.0" textFill="WHITE" />
+            <Slider fx:id="slider2" max="500.0" min="2.0" onDragDetected="#setSlider2" orientation="VERTICAL" prefHeight="368.0" prefWidth="16.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
